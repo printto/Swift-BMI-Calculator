@@ -6,3 +6,6 @@
 
 ## Software used
 - Xcode
+
+## Screenshot
+![Screenshot](https://raw.githubusercontent.com/printto/Swift-BMI-Calculator/master/screenshot.png "Screenshot")
