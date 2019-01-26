@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMI-Calculator-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7sz-ae-eYM">
+                                <rect key="frame" x="16" y="20" width="343" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="8Rc-FG-iIu"/>
+                                    <constraint firstAttribute="height" constant="280" id="hxa-Th-ya6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMI appears here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7s-dW-3gJ">
+                                <rect key="frame" x="16" y="308" width="343" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="5Cj-AF-JcU"/>
+                                    <constraint firstAttribute="height" constant="33" id="WUw-NY-zUF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.12631938996745296" green="0.45158176807524464" blue="0.52637224740932642" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITd-nx-ZFh">
+                                <rect key="frame" x="16" y="349" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="XbB-JT-QlG"/>
+                                    <constraint firstAttribute="width" constant="343" id="sf7-pv-r0s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="1" green="0.077984225390435036" blue="0.78191677350926525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your height (cm.)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgh-qc-CXS">
+                                <rect key="frame" x="16" y="392" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GIS-z9-ov5"/>
+                                    <constraint firstAttribute="width" constant="343" id="RIu-Xb-QZP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your weight (Kg.)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWD-Uj-Xmk">
+                                <rect key="frame" x="16" y="450" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="5hY-Jn-Ta6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="8Y1-nQ-x4L"/>
+                                    <constraint firstAttribute="height" constant="50" id="JNq-t7-gJ7"/>
+                                    <constraint firstAttribute="width" constant="343" id="b59-0o-3ye"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAq-Qz-MLw">
+                                <rect key="frame" x="90" y="508" width="195" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="4gK-Zl-3sO"/>
+                                    <constraint firstAttribute="width" constant="195" id="lF9-Id-cmg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bTE-YX-bJ4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qAq-Qz-MLw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="1Wu-Ns-KHa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ITd-nx-ZFh" secondAttribute="trailing" constant="16" id="FzG-vV-D5j"/>
+                            <constraint firstItem="ITd-nx-ZFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ieo-tB-lwg"/>
+                            <constraint firstItem="ITd-nx-ZFh" firstAttribute="top" secondItem="R7s-dW-3gJ" secondAttribute="bottom" constant="8" id="N3a-bK-rkY"/>
+                            <constraint firstItem="eWD-Uj-Xmk" firstAttribute="top" secondItem="kgh-qc-CXS" secondAttribute="bottom" constant="8" id="OJj-E0-XiI"/>
+                            <constraint firstItem="eWD-Uj-Xmk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="S3u-MV-CNx"/>
+                            <constraint firstItem="qAq-Qz-MLw" firstAttribute="top" secondItem="eWD-Uj-Xmk" secondAttribute="bottom" constant="8" id="Tas-md-BEq"/>
+                            <constraint firstItem="kgh-qc-CXS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VK1-G3-Tdc"/>
+                            <constraint firstItem="7sz-ae-eYM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eSK-dP-DmK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kgh-qc-CXS" secondAttribute="trailing" constant="16" id="eZa-qi-Vyl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7sz-ae-eYM" secondAttribute="trailing" constant="16" id="fYV-tB-Y9N"/>
+                            <constraint firstItem="R7s-dW-3gJ" firstAttribute="top" secondItem="7sz-ae-eYM" secondAttribute="bottom" constant="8" id="iMo-au-fyj"/>
+                            <constraint firstItem="R7s-dW-3gJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iiY-QB-A3c"/>
+                            <constraint firstItem="kgh-qc-CXS" firstAttribute="top" secondItem="ITd-nx-ZFh" secondAttribute="bottom" constant="8" id="p6q-i4-sQr"/>
+                            <constraint firstItem="7sz-ae-eYM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rxa-jz-6FT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R7s-dW-3gJ" secondAttribute="trailing" constant="16" id="ute-Xe-urI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eWD-Uj-Xmk" secondAttribute="trailing" constant="16" id="xxD-6J-O2o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qAq-Qz-MLw" secondAttribute="trailing" constant="90" id="z45-zc-7ze"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bmiImage" destination="7sz-ae-eYM" id="TR9-xW-bVh"/>
+                        <outlet property="bmiText" destination="R7s-dW-3gJ" id="O4v-U7-FV3"/>
+                        <outlet property="categoryText" destination="ITd-nx-ZFh" id="7UD-am-Jv7"/>
+                        <outlet property="heightInput" destination="kgh-qc-CXS" id="s3E-ZI-JLQ"/>
+                        <outlet property="weightInput" destination="eWD-Uj-Xmk" id="Y5w-sh-Ii1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BMI-Calculator-2.png" width="521" height="118"/>
+    </resources>
+</document>
